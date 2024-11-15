@@ -12,13 +12,9 @@ hero:
   actions:
     - text: 开始
       link: /前端/
-    - text: 导航
-      link: /nav/
-      theme: alt
-
-    - text: 测试页
-      link: /test
-      theme: alt
+    # - text: 导航
+    #   link: /nav/
+    #   theme: alt
 features:
   - icon: 📖
     title: tableForm
@@ -26,17 +22,17 @@ features:
     link: /组件/tableForm/
     linkText: 嘻嘻嘻
   - icon: 📚
-    title: 占位
-    details: 占位占位占位
-    # link: /面试相关/
-    linkText: 嘻嘻占位占位嘻
+    title: 笔记
+    details: 
+    link: https://caolinchao2.github.io/cao_note/
+    linkText: 常用知识点
   - icon: 🍉
     title: 占位
     details: 占位占位占位
     # link: /TechToolkit/
     linkText: 占位占位占位
   - icon: 🍉
-    title: 占位
+    title: 笔记
     details: 占位占位占位
     # link: /TechToolkit/
     linkText: 占位占位占位

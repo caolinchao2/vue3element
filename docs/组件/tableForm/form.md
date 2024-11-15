@@ -158,6 +158,65 @@ const formConfig = computed(() => {
 </style>
 ```
 
+## 自定义横向展示
+
+可以自定义横向展示的个数，默认四个
+
+```vue preview
+<template>
+  <x-form
+    style="width: 100%"
+    ref="xFormRef"
+    v-model:propData="formData"
+    :config="formConfig"
+  ></x-form>
+</template>
+<script setup>
+import { ref, computed } from 'vue'
+let formData = ref({})
+let xFormRef = ref()
+
+const formConfig = computed(() => {
+  return {
+    inline: false,
+    isElRow: true,
+    elColSize: {
+      xs: 24,
+      sm: 12,
+      md: 12,
+      lg: 12,
+      xl: 12,
+      but: {
+        xs: 24,
+        sm: 12,
+        md: 8,
+        lg: 8,
+        xl: 8,
+      },
+    },
+    item: [
+      {
+        xType: 'input',
+        name: 'batchNumber',
+        label: '批次号:',
+        placeholder: '请输入',
+      },
+
+      {
+        xType: 'input',
+        name: 'phoneNumber',
+        label: '手机号:',
+        placeholder: '请输入',
+      },
+    ],
+    labelWidth: '80px',
+    itemStyle: 'width:100%;height:36px',
+  }
+})
+</script>
+<style lang="scss"></style>
+```
+
 ## slot 插入
 
 在 form 表单之间插入任意信息，满足自定义需求，支持两种不同的插入方式，设置 xType=slot 时，表示保留 form 原有的 itemLabel，插入 label 后的内容；当设置 slot='slotName' 时表示插入一段和 form 完全无关的代码
@@ -411,12 +470,16 @@ function loadAll() {
 
 ## Config
 
-| 参数      | 说明                                                                                            | 类型          | 可选项 | 默认值 |
-| --------- | ----------------------------------------------------------------------------------------------- | ------------- | ------ | ------ |
-| ......    | 绑定值所有 el-form 的属性及方法，参见[文档](https://element-plus.org/zh-CN/component/form.html) | ...           | —      | —      |
-| itemStyle | 输入框的样式                                                                                    | string        | —      | —      |
-| item      | 表单的 Item，具体看下表 item                                                                    | array(object) | —      | —      |
-| operate   | 表单底部的操作按钮，                                                                            | array(object) |        |        |
+| 参数       | 说明                                                                                            | 类型          | 可选项 | 默认值 |
+| ---------- | ----------------------------------------------------------------------------------------------- | ------------- | ------ | ------ |
+| ......     | 绑定值所有 el-form 的属性及方法，参见[文档](https://element-plus.org/zh-CN/component/form.html) | ...           | —      | —      |
+| itemStyle  | 全部输入框的样式                                                                                | string        | —      | —      |
+| item       | 表单的 Item，具体看下表 item                                                                    | array(object) | —      | —      |
+| operate    | 表单底部的操作按钮，                                                                            | array(object) | —      | —      |
+| labelWidth | label 的宽度                                                                                    | string        | —      | —      |
+| isElRow    | 是否使用 row 展示                                                                               | boolean       |        | true   |
+| elColSize  | 可以自定义 Row 属性，可见实例                                                                   | object        |        | {}     |
+|            |                                                                                                 |               |        |        |
 
 ## Item
 

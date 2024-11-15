@@ -6,6 +6,12 @@
 
 ```vue preview
 <template>
+  <x-form
+    style="width: 100%"
+    ref="xFormRef"
+    v-model:propData="formData"
+    :config="formConfig"
+  ></x-form>
   <x-table ref="xTable" :config="configTable" :data="tableData" :load="getTableList" :page="page">
     <template #status="scope">
       <span v-if="scope.row.status === 1" style="color: #2e5ef6">未复审</span>
@@ -17,6 +23,60 @@
 </template>
 <script setup>
 import { ref, computed } from 'vue'
+let formData = ref({})
+let xFormRef = ref()
+const formConfig = computed(() => {
+  return {
+    inline: false,
+    isElRow: true,
+    elColSize: {
+      xs: 24,
+      sm: 12,
+      md: 12,
+      lg: 12,
+      xl: 12,
+      but: {
+        xs: 24,
+        sm: 12,
+        md: 8,
+        lg: 8,
+        xl: 8,
+      },
+    },
+    item: [
+      {
+        xType: 'input',
+        name: 'batchNumber',
+        label: '批次号:',
+        placeholder: '请输入',
+      },
+
+      {
+        xType: 'input',
+        name: 'phoneNumber',
+        label: '手机号:',
+        placeholder: '请输入',
+      },
+    ],
+    labelWidth: '80px',
+    itemStyle: 'width:100%;height:36px',
+    operate: [
+      {
+        text: '查询',
+        show: true,
+        type: 'primary',
+        loading: false,
+        click: () => {},
+      },
+      {
+        text: '重置',
+        show: true,
+        type: 'default',
+        click: () => {},
+      },
+    ],
+  }
+})
 let page = ref({
   pageSizes: [5, 10, 20, 50, 100],
   pageSize: 10,
@@ -178,33 +238,60 @@ let configTable = ref({
       type: 'text ',
       style: { color: '#165BFF' },
       show: true,
-      click: (row) => {
-        this.$router.push({
-          name: 'Particulars',
-        })
-        sessionStorage.setItem(
-          'routeparams',
-          JSON.stringify({ id: row.id, isView: true, status: 5 }),
-        )
-      },
+      click: (row) => {},
     },
     {
       text: '去审批',
       dropdown: false,
       type: 'text',
       show: true,
-      style: { color: '#165BFF', marginLeft: '16px' },
-      click: (row) => {
-        this.$router.push({
-          name: 'Particulars',
-        })
-        sessionStorage.setItem(
-          'routeparams',
-          JSON.stringify({ id: row.id, isView: false, status: 5 }),
-        )
-      },
+      style: { color: 'red', marginLeft: '16px' },
+      click: (row) => {},
     },
   ],
 })
 </script>
 ```
+
+## Attributes
+
+| 参数    | 说明                          | 类型     | 可选项 | 默认值 |
+| ------- | ----------------------------- | -------- | ------ | ------ |
+| v-model | 绑定值                        | object   | -      | -      |
+| config  | 表格的配置，具体看下表 config | object   |        |        |
+| data    | 表格的数据                    | array    |        |        |
+| page    | 表格的页码，具体看下表 page   | object   |        |        |
+| load    | 获取表格数据的方法函数        | function |        |        |
+
+## Config
+
+| 参数      | 说明                                                                                             | 类型          | 可选项 | 默认值 |
+| --------- | ------------------------------------------------------------------------------------------------ | ------------- | ------ | ------ |
+| ......    | 绑定值所有 el-table 的属性及方法，参见[文档](https://element-plus.org/zh-CN/component/form.html) | ...           | —      | —      |
+| search    | 搜索框及按钮的配置，此配置会覆盖全局的配置，结构参见全局配置 xtable.search                       | object        | —      | —      |
+| searchBtn | 是否显示搜索按钮                                                                                 | boolean       |        |        |
+| resetBtn  | 是否显示重置按钮                                                                                 | boolean       |        |        |
+| btn       | 自定义搜索框后的按钮                                                                             | object        |        |        |
+| column    | 表格的列，具体看下表 column                                                                      | array(object) |        |        |
+| operate   | 表格右侧的操作按钮                                                                               | array(object) |        |        |
+
+## Page
+
+| 参数      | 说明           | 类型          | 可选项 | 默认值 |
+| --------- | -------------- | ------------- | ------ | ------ |
+| pageNum   | 当前页码       | number        |        |        |
+| pageSize  | 默认每页数量   | number        |        |        |
+| pageSizes | 可选的每页数量 | array(number) |        |        |
+| total     | 总数           | number        |        |        |
+
+## Column
+
+| 参数     | 说明                                                    | 类型    | 可选项      | 默认值 |
+| -------- | ------------------------------------------------------- | ------- | ----------- | ------ |
+| label    | 列头部的文字                                            | string  |             |        |
+| name     | 与表格数据对应的 key                                    | string  |             |        |
+| children | 用于多级表头，可见上述示例                              | array   |             |        |
+| search   | 是否需要搜索框                                          | boolean | 'true/false |        |
+| show     | 是否需要显示 column                                     | boolean | 'true/false |        |
+| slot     | 通过插槽插入，可见上述示例                              | boolean | 'true/false | false  |
+| ...      | search=true 时，配置搜索框的参数，实际内置的 xForm 表单 |         |             |        |
