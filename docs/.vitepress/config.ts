@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 import MarkdownPreview from 'vite-plugin-markdown-preview'
 import { head, nav, sidebar,algolia } from './configs'
 
-const APP_BASE_PATH = 'cao_note'
+const APP_BASE_PATH = 'component'
 // const APP_BASE_PATH = basename(process.env.GITHUB_REPOSITORY || '')
 
 export default defineConfig({
@@ -39,7 +39,7 @@ export default defineConfig({
 
     socialLinks: [{ icon: 'github', link: 'https://gitee.com/cao-linchao/x_c_note' }],
     editLink: {
-      pattern: 'https://gitee.com/cao-linchao/cao_note/edit/master/docs/:path',
+      pattern: 'https://gitee.com/cao-linchao/component/edit/master/docs/:path',
       text: '在Gitee上编辑此页 '
     },
     footer: {
