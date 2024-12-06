@@ -3,7 +3,7 @@ import xTable from './xTable/index.js'
 import globalConfig from './common/config.js'
 const components = [
   xForm,
-  xTable
+  xTable,
 ]
 
 function install(Vue, opts = {}) {
@@ -16,5 +16,5 @@ function install(Vue, opts = {}) {
 export default {
   install,
   xForm,
-  xTable
+  xTable,
 }
