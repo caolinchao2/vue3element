@@ -29,7 +29,6 @@
     "vite-plugin-markdown-preview": "^1.1.1",
     "vitepress": "1.0.0-rc.20",
     "vue": "^3.3.4"
-
   },
   "prettier": "@femm/prettier",
   "lint-staged": {
@@ -38,9 +37,11 @@
     ]
   },
   "dependencies": {
+    "@vue/shared": "^3.4.36",
     "element-plus": "^2.7.6",
     "lodash.clonedeep": "^4.5.0",
     "lodash.merge": "^4.6.2",
-    "@vue/shared": "^3.4.36"
+    "sortablejs": "^1.15.6",
+    "vuedraggable": "^2.24.3"
   }
 }

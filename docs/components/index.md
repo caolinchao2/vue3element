@@ -21,7 +21,7 @@ function removeTrailingSlash(str) {
 <!-- <pre> {{theme.nav}} </pre> -->
 
 <div v-for="item in theme.nav">
-  <div v-if="item.text === '组件'">
+  <div v-if="item.text === 'components'">
     <p v-for="i in item.items"> <a :href="`${base}${i.link}`">{{ i.text }}</a> </p>
   </div>
 </div>

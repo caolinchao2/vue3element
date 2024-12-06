@@ -16,46 +16,26 @@ hero:
     #   link: /nav/
     #   theme: alt
 features:
-  - icon: 📖
+  - icon: 🍉
+    title: 常用组件
+    details: 一些常用的组件
+    link: /components/
+    linkText: 常用组件
+  - icon: 🍉
+    title: 复杂组件
+    details: 一些复杂的组件
+    link: /组件/tableForm/
+    linkText: 复杂组件
+  - icon: 🍉
     title: tableForm
     details: 快速生成tableb表格、form表单
-    link: /组件/tableForm/
+    link: /components/tableForm/
     linkText: 嘻嘻嘻
   - icon: 📚
     title: 笔记
     details: 
     link: https://caolinchao2.github.io/cao_note/
     linkText: 常用知识点
-  - icon: 🍉
-    title: 占位
-    details: 占位占位占位
-    # link: /TechToolkit/
-    linkText: 占位占位占位
-  - icon: 🍉
-    title: 笔记
-    details: 占位占位占位
-    # link: /TechToolkit/
-    linkText: 占位占位占位
-  # - icon: 📘
-  #   title: 源码阅读
-  #   details: 了解各种库的实现原理<br />学习其中的小技巧和冷知识
-  #   link: https://notes.fe-mm.com/analysis/utils/only-allow
-  #   linkText: 源码阅读
-  # - icon: 💡
-  #   title: Workflow
-  #   details: 在工作中学到的一切<small>（常用库/工具/奇淫技巧等）</small><br />配合 CV 大法来更好的摸鱼
-  #   link: https://notes.fe-mm.com/workflow/utils/library
-  #   linkText: 常用工具库
-  # - icon: 🧰
-  #   title: 提效工具
-  #   details: 工欲善其事，必先利其器<br />记录开发和日常使用中所用到的软件、插件、扩展等
-  #   link: /efficiency/online-tools
-  #   linkText: 提效工具
-  # - icon: 🐞
-  #   title: 踩坑记录
-  #   details: 那些年我们踩过的坑<br />总有一些让你意想不到的问题
-  #   link: https://notes.fe-mm.com/pit/npm
-  #   linkText: 踩坑记录
 ---
 
 <style>

@@ -3,12 +3,13 @@ import { useData, EnhanceAppContext } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import "element-plus/theme-chalk/dark/css-vars.css"
 import { createMediumZoomProvider } from './composables/useMediumZoom'
-import Xcrud from "../../components/formTable/index.js";
+import Xcrud from "../../../packages/formTable/index.js";
 import MLayout from './components/MLayout.vue'
 import MNavLinks from './components/MNavLinks.vue'
 import zhCn from "element-plus/es/locale/lang/zh-cn";
-
+import CuiPlus from "../../../packages"
 import './styles/index.scss'
 
 let homePageStyle: HTMLStyleElement | undefined
@@ -37,6 +38,7 @@ export default {
         locale: zhCn,
       });
       app.use(Xcrud);
+      app.use(CuiPlus);
       watch(
         () => router.route.data.relativePath,
         () =>
