@@ -1,4 +1,4 @@
-# CInput 输入框组件
+# Input 输入框组件
 
 ### 基本使用
 
@@ -239,16 +239,18 @@ const showWordLimit = ref(false)
 
 ```vue preview
 <template>
-
+  <c-layout-page>
+    <c-layout-page-item>
       <c-input v-model="input1" style="max-width: 600px" placeholder="Please input">
         <template #prepend>Http://</template>
       </c-input>
-
+    </c-layout-page-item>
+    <c-layout-page-item>
       <c-input v-model="input2" style="max-width: 600px" placeholder="Please input">
         <template #append>.com</template>
       </c-input>
-
-
+    </c-layout-page-item>
+    <c-layout-page-item>
       <c-input
         v-model="input3"
         style="max-width: 600px"
@@ -266,6 +268,8 @@ const showWordLimit = ref(false)
           <el-button :icon="Search" />
         </template>
       </c-input>
+    </c-layout-page-item>
+    <c-layout-page-item>
       <c-input
         v-model="input3"
         style="max-width: 600px"
@@ -283,6 +287,8 @@ const showWordLimit = ref(false)
           </el-select>
         </template>
       </c-input>
+    </c-layout-page-item>
+  </c-layout-page>
 </template>
 
 <script setup lang="ts">
@@ -308,12 +314,18 @@ const select = ref("")
 
 ```vue preview
 <template>
+  <c-layout-page>
+    <c-layout-page-item>
       <el-radio-group v-model="size" aria-label="size control" size="small">
         <el-radio-button value="large">large</el-radio-button>
         <el-radio-button value="default">default</el-radio-button>
         <el-radio-button value="small">small</el-radio-button>
       </el-radio-group>
+    </c-layout-page-item>
+    <c-layout-page-item>
       <c-input placeholder="请输入内容" :size="size" v-model="vlaue" @change="change" />
+    </c-layout-page-item>
+  </c-layout-page>
 </template>
 <script setup lang="ts">
 import { ref } from "vue"
@@ -333,15 +345,18 @@ const change = (e: any) => {
 
 ```vue preview
 <template>
-  
+  <c-layout-page>
+    <c-layout-page-item>
       <c-input v-model="input1" style="max-width: 600px" placeholder="Please input">
         <template #prepend>Http://</template>
       </c-input>
-  
+    </c-layout-page-item>
+    <c-layout-page-item>
       <c-input v-model="input2" style="max-width: 600px" placeholder="Please input">
         <template #append>.com</template>
       </c-input>
-   
+    </c-layout-page-item>
+    <c-layout-page-item>
       <c-input
         v-model="input3"
         style="max-width: 600px"
@@ -359,7 +374,8 @@ const change = (e: any) => {
           <el-button :icon="Search" />
         </template>
       </c-input>
- 
+    </c-layout-page-item>
+    <c-layout-page-item>
       <c-input
         v-model="input3"
         style="max-width: 600px"
@@ -377,16 +393,22 @@ const change = (e: any) => {
           </el-select>
         </template>
       </c-input>
- 
+    </c-layout-page-item>
+  </c-layout-page>
 </template>
-<script setup lang="ts">
-import { ref } from "vue"
-import { Search } from "@element-plus/icons-vue"
-const input1 = ref("")
-const input2 = ref("")
-const input3 = ref("")
-const select = ref("")
-</script>
 
 ```
 
+### 配置参数（Attributes）继承 el-input Attributes
+
+| 参数          | 说明                                 | 类型                                                         | 默认值   |
+| ------------- | ------------------------------------ | ------------------------------------------------------------ | -------- |
+| v-model       | 绑定值                               | string                                                       | -        |
+| placeholder   | placeholder提示语                    | string                                                       | '请输入' |
+| decimalLimit  | 小数点位数(小数、金额类型时生效)     | Number                                                       | 2        |
+| appendTitle   | 插槽append显示文案(金额类型时生效)   | string                                                       | '元'     |
+| showThousands | 是否显示千分号(小数、金额类型时生效) | Boolean                                                      | false    |
+| isTip         | 是否提示金额中文(金额类型时生效)     | Boolean                                                      | false    |
+| inputType     | 特性类型标注                         | string(文字:text,金额:amount,电话:phone,整数:integer,小数:decimal,身份证:idCard) | text     |
+
+### 继承 el-input 事件、插槽、方法

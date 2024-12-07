@@ -11,7 +11,8 @@ import MNavLinks from './components/MNavLinks.vue'
 import zhCn from "element-plus/es/locale/lang/zh-cn";
 import CuiPlus from "../../../packages"
 import './styles/index.scss'
-
+// 图标并进行全局注册
+import * as ElementPlusIconsVue from "@element-plus/icons-vue"
 let homePageStyle: HTMLStyleElement | undefined
 
 export default {
@@ -34,9 +35,13 @@ export default {
     app.component('MNavLinks', MNavLinks)
 
     if (typeof window !== 'undefined') {
-      app.use(ElementPlus,{
+      app.use(ElementPlus, {
         locale: zhCn,
       });
+      // 注册所有图标
+      for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+        app.component(key, component)
+      }
       app.use(Xcrud);
       app.use(CuiPlus);
       watch(

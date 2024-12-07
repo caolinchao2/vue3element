@@ -20,7 +20,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '常用组件',
       collapsed: false,
       items: [
-        { text: '一、input', link: '/components/CInput/index' },
+        { text: '一、input输入框', link: '/components/CInput/index' },
+        { text: '二、select选择器', link: '/components/Cselect/index' },
+        { text: '三、detail详情', link: '/components/Cdetail/index' },
+        { text: '四、button防抖按钮', link: '/components/Cbutton/index' },
       ],
     },
     {
