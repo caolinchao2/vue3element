@@ -36,7 +36,7 @@
         :style="{ width: tableWidth ? `${tableWidth}px` : '100%' }"
       >
         <div class="table_query_condition" v-if="isShowQuery">
-          <t-query-condition
+          <c-query-condition
             ref="tQueryConditionRef"
             :boolEnter="false"
             @handleEvent="handleEvent"
@@ -51,7 +51,7 @@
               }}</el-button>
               <slot name="querybar"></slot>
             </template>
-          </t-query-condition>
+          </c-query-condition>
         </div>
         <slot name="toolbar"></slot>
         <el-table
@@ -148,7 +148,7 @@
 </template>
 
 <script setup lang="ts" name="TSelectTable">
-import TQueryCondition from "../../query-condition/src/index.vue"
+import CQueryCondition from "../../query-condition/src/index.vue"
 import RenderCol from "./renderCol.vue"
 import {
   computed,

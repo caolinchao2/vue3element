@@ -24,6 +24,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '二、select选择器', link: '/components/Cselect/index' },
         { text: '三、detail详情', link: '/components/Cdetail/index' },
         { text: '四、button防抖按钮', link: '/components/Cbutton/index' },
+        { text: '五、图标选择组件', link: '/components/图标选择组件/index' },
+        { text: '六、下拉选择表格', link: '/components/CselectTable/index' },
+        { text: '七、虚拟列表下拉选择表格', link: '/components/虚拟列表下拉选择表格/index' },
+        { text: '八、表单组件', link: '/components/Cform/index' },
       ],
     },
     {

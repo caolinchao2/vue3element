@@ -19,7 +19,7 @@ const DataSource: any = reactive({
     id: "1498904492217241602",
     stocktakePlanNo: "PD-YX-20220302002",
     workshopId: 301,
-    workshopLabel: "压型车间",
+    workshopLabel: "压型车型",
     planStocktakeDate: "2022-03-03",
     warehouseId: 1,
     warehouseName: "压型电极仓",
@@ -35,37 +35,37 @@ const DataSource: any = reactive({
   },
   descData: [
     {
-      label: "盘点单编号",
+      label: "电压",
       fieldName: "stocktakePlanNo",
       value: ""
     },
     {
-      label: "盘点单状态",
+      label: "状态",
       fieldName: "stocktakeJobStatusLabel",
       value: ""
     },
     {
-      label: "盘点负责人",
+      label: "负责人",
       fieldName: "planStocktakeUserName",
       value: ""
     },
     {
-      label: "计划盘点日期",
+      label: "日期",
       fieldName: "planStocktakeDate",
       value: ""
     },
     {
-      label: "车间",
+      label: "车型",
       fieldName: "workshopLabel",
       value: ""
     },
     {
-      label: "仓库",
+      label: "嘻嘻",
       fieldName: "warehouseName",
       value: ""
     },
     {
-      label: "盘点所有物料",
+      label: "哎",
       fieldName: "originTypeListLabel",
       value: ""
     },
@@ -105,7 +105,7 @@ const DataSource: any = reactive({
     id: "1498904492217241602",
     stocktakePlanNo: "PD-YX-20220302002",
     workshopId: 301,
-    workshopLabel: "压型车间",
+    workshopLabel: "压型车型",
     planStocktakeDate: "2022-03-03",
     warehouseId: 1,
     warehouseName: "压型电极仓",
@@ -121,37 +121,37 @@ const DataSource: any = reactive({
   },
   descData: [
     {
-      label: "盘点单编号",
+      label: "电压",
       fieldName: "stocktakePlanNo",
       value: ""
     },
     {
-      label: "盘点单状态",
+      label: "状态",
       fieldName: "stocktakeJobStatusLabel",
       value: ""
     },
     {
-      label: "盘点负责人",
+      label: "负责人",
       fieldName: "planStocktakeUserName",
       value: ""
     },
     {
-      label: "计划盘点日期",
+      label: "日期",
       fieldName: "planStocktakeDate",
       value: ""
     },
     {
-      label: "车间",
+      label: "车型",
       fieldName: "workshopLabel",
       value: ""
     },
     {
-      label: "仓库",
+      label: "嘻嘻",
       fieldName: "warehouseName",
       value: ""
     },
     {
-      label: "盘点所有物料",
+      label: "哎",
       fieldName: "originTypeListLabel",
       value: ""
     },
@@ -200,7 +200,7 @@ const DataSource: any = reactive({
     id: "1498904492217241602",
     stocktakePlanNo: "PD-YX-20220302002",
     workshopId: 301,
-    workshopLabel: "压型车间",
+    workshopLabel: "压型车型",
     planStocktakeDate: "2022-03-03",
     warehouseId: 1,
     warehouseName: "压型电极仓",
@@ -216,38 +216,38 @@ const DataSource: any = reactive({
   },
   descData: [
     {
-      label: "盘点单编号",
+      label: "电压",
       fieldName: "stocktakePlanNo",
       value: ""
     },
     {
-      label: "盘点单状态",
+      label: "状态",
       fieldName: "stocktakeJobStatusLabel",
       value: ""
     },
     {
-      label: "盘点负责人",
+      label: "负责人",
       fieldName: "planStocktakeUserName",
       value: ""
     },
     {
-      label: "计划盘点日期",
+      label: "日期",
       fieldName: "planStocktakeDate",
       bind: { "label-class-name": "custom_name" },
       value: ""
     },
     {
-      label: "车间",
+      label: "车型",
       fieldName: "workshopLabel",
       value: ""
     },
     {
-      label: "仓库",
+      label: "嘻嘻",
       fieldName: "warehouseName",
       value: ""
     },
     {
-      label: "盘点所有物料",
+      label: "哎",
       fieldName: "originTypeListLabel",
       value: ""
     },
@@ -287,7 +287,7 @@ const DataSource: any = reactive({
     id: "1498904492217241602",
     stocktakePlanNo: "PD-YX-20220302002",
     workshopId: 301,
-    workshopLabel: "压型车间",
+    workshopLabel: "压型车型",
     planStocktakeDate: "2022-03-03",
     warehouseId: 1,
     warehouseName: "压型电极仓",
@@ -303,37 +303,37 @@ const DataSource: any = reactive({
   },
   descData: [
     {
-      label: "盘点单编号",
+      label: "电压",
       fieldName: "stocktakePlanNo",
       value: ""
     },
     {
-      label: "盘点单状态",
+      label: "状态",
       fieldName: "stocktakeJobStatusLabel",
       value: ""
     },
     {
-      label: "盘点负责人",
+      label: "负责人",
       fieldName: "planStocktakeUserName",
       value: ""
     },
     {
-      label: "计划盘点日期",
+      label: "日期",
       fieldName: "planStocktakeDate",
       value: ""
     },
     {
-      label: "车间",
+      label: "车型",
       fieldName: "workshopLabel",
       value: ""
     },
     {
-      label: "仓库",
+      label: "嘻嘻",
       fieldName: "warehouseName",
       value: ""
     },
     {
-      label: "盘点所有物料",
+      label: "哎",
       fieldName: "originTypeListLabel",
       value: ""
     },
@@ -379,7 +379,7 @@ const DataSource: any = reactive({
     id: "1498904492217241602",
     stocktakePlanNo: "PD-YX-20220302002",
     workshopId: 301,
-    workshopLabel: "压型车间",
+    workshopLabel: "压型车型",
     planStocktakeDate: "2022-03-03",
     warehouseId: 1,
     warehouseName: "压型电极仓",
@@ -395,22 +395,22 @@ const DataSource: any = reactive({
   },
   descData: [
     {
-      label: "盘点单编号",
+      label: "电压",
       fieldName: "stocktakePlanNo",
       value: ""
     },
     {
-      label: "盘点单状态",
+      label: "状态",
       fieldName: "stocktakeJobStatusLabel",
       value: ""
     },
     {
-      label: "盘点负责人",
+      label: "负责人",
       fieldName: "planStocktakeUserName",
       value: ""
     },
     {
-      label: "计划盘点日期",
+      label: "日期",
       fieldName: "planStocktakeDate",
       value: ""
     },
@@ -421,17 +421,17 @@ const DataSource: any = reactive({
       value: ""
     },
     {
-      label: "车间",
+      label: "车型",
       fieldName: "workshopLabel",
       value: ""
     },
     {
-      label: "仓库",
+      label: "嘻嘻",
       fieldName: "warehouseName",
       value: ""
     },
     {
-      label: "盘点所有物料",
+      label: "哎",
       fieldName: "originTypeListLabel",
       value: ""
     },
@@ -502,7 +502,7 @@ const DataSource: any = reactive({
     id: "1498904492217241602",
     stocktakePlanNo: "PD-YX-20220302002",
     workshopId: 301,
-    workshopLabel: "压型车间",
+    workshopLabel: "压型车型",
     planStocktakeDate: "2022-03-03",
     warehouseId: 1,
     warehouseName: "压型电极仓",
@@ -518,22 +518,22 @@ const DataSource: any = reactive({
   },
   descData: [
     {
-      label: "盘点单编号",
+      label: "电压",
       fieldName: "stocktakePlanNo",
       value: ""
     },
     {
-      label: "盘点单状态",
+      label: "状态",
       fieldName: "stocktakeJobStatusLabel",
       value: ""
     },
     {
-      label: "盘点负责人",
+      label: "负责人",
       fieldName: "planStocktakeUserName",
       value: ""
     },
     {
-      label: "计划盘点日期",
+      label: "日期",
       fieldName: "planStocktakeDate",
       value: "",
       tooltip: "tooltip字符串显示"
@@ -553,17 +553,17 @@ const DataSource: any = reactive({
       }
     },
     {
-      label: "车间",
+      label: "车型",
       fieldName: "workshopLabel",
       value: ""
     },
     {
-      label: "仓库",
+      label: "嘻嘻",
       fieldName: "warehouseName",
       value: ""
     },
     {
-      label: "盘点所有物料",
+      label: "哎",
       fieldName: "originTypeListLabel",
       value: ""
     },
@@ -609,7 +609,7 @@ const DataSource: any = reactive({
     id: "1498904492217241602",
     stocktakePlanNo: "PD-YX-20220302002",
     workshopId: 301,
-    workshopLabel: "压型车间",
+    workshopLabel: "压型车型",
     planStocktakeDate: "2022-03-03",
     warehouseId: 1,
     warehouseName: "压型电极仓",
@@ -625,17 +625,17 @@ const DataSource: any = reactive({
   },
   descData: [
     {
-      label: "盘点单编号",
+      label: "电压",
       fieldName: "stocktakePlanNo",
       value: ""
     },
     {
-      label: "盘点单状态",
+      label: "状态",
       fieldName: "stocktakeJobStatusLabel",
       value: ""
     },
     {
-      label: "盘点负责人",
+      label: "负责人",
       fieldName: "planStocktakeUserName",
       value: "",
       tooltip: () => {
@@ -643,7 +643,7 @@ const DataSource: any = reactive({
       }
     },
     {
-      label: "计划盘点日期",
+      label: "日期",
       fieldName: "planStocktakeDate",
       value: "",
       tooltip: "tooltip字符串显示"
@@ -655,17 +655,17 @@ const DataSource: any = reactive({
       value: ""
     },
     {
-      label: "车间",
+      label: "车型",
       fieldName: "workshopLabel",
       value: ""
     },
     {
-      label: "仓库",
+      label: "嘻嘻",
       fieldName: "warehouseName",
       value: ""
     },
     {
-      label: "盘点所有物料",
+      label: "哎",
       fieldName: "originTypeListLabel",
       value: ""
     },
@@ -705,7 +705,7 @@ const DataSource: any = reactive({
     id: "1498904492217241602",
     stocktakePlanNo: "PD-YX-20220302002",
     workshopId: 301,
-    workshopLabel: "压型车间",
+    workshopLabel: "压型车型",
     planStocktakeDate: "2022-03-03",
     warehouseId: 1,
     warehouseName: "压型电极仓",
@@ -721,37 +721,37 @@ const DataSource: any = reactive({
   },
   descData: [
     {
-      label: "盘点单编号",
+      label: "电压",
       fieldName: "stocktakePlanNo",
       value: ""
     },
     {
-      label: "盘点单状态",
+      label: "状态",
       fieldName: "stocktakeJobStatusLabel",
       value: ""
     },
     {
-      label: "盘点负责人",
+      label: "负责人",
       fieldName: "planStocktakeUserName",
       value: ""
     },
     {
-      label: "计划盘点日期",
+      label: "日期",
       fieldName: "planStocktakeDate",
       value: ""
     },
     {
-      label: "车间",
+      label: "车型",
       fieldName: "workshopLabel",
       value: ""
     },
     {
-      label: "仓库",
+      label: "嘻嘻",
       fieldName: "warehouseName",
       value: ""
     },
     {
-      label: "盘点所有物料",
+      label: "哎",
       fieldName: "originTypeListLabel",
       value: ""
     },
@@ -791,7 +791,7 @@ const DataSource: any = reactive({
     id: "1498904492217241602",
     stocktakePlanNo: "PD-YX-20220302002",
     workshopId: 301,
-    workshopLabel: "压型车间",
+    workshopLabel: "压型车型",
     planStocktakeDate: "2022-03-03",
     warehouseId: 1,
     warehouseName: "压型电极仓",
@@ -807,37 +807,37 @@ const DataSource: any = reactive({
   },
   descData: [
     {
-      label: "盘点单编号",
+      label: "电压",
       fieldName: "stocktakePlanNo",
       value: ""
     },
     {
-      label: "盘点单状态",
+      label: "状态",
       fieldName: "stocktakeJobStatusLabel",
       value: ""
     },
     {
-      label: "盘点负责人",
+      label: "负责人",
       fieldName: "planStocktakeUserName",
       value: ""
     },
     {
-      label: "计划盘点日期",
+      label: "日期",
       fieldName: "planStocktakeDate",
       value: ""
     },
     {
-      label: "车间",
+      label: "车型",
       fieldName: "workshopLabel",
       value: ""
     },
     {
-      label: "仓库",
+      label: "嘻嘻",
       fieldName: "warehouseName",
       value: ""
     },
     {
-      label: "盘点所有物料",
+      label: "哎",
       fieldName: "originTypeListLabel",
       value: ""
     },
@@ -882,33 +882,33 @@ const DataSource: any = reactive({
   },
   descData: [
     {
-      label: "盘点单编号",
+      label: "电压",
       labelRender: () => {
-        return <span style="color:red;">盘点单编号</span>
+        return <span style="color:red;">电压</span>
       },
       fieldName: "stocktakePlanNo",
       value: ""
     },
     {
-      label: "盘点单状态",
+      label: "状态",
       labelRender: () => {
-        return <span style="color:blue;">盘点单状态</span>
+        return <span style="color:blue;">状态</span>
       },
       fieldName: "stocktakeJobStatusLabel",
       value: ""
     },
     {
-      label: "盘点负责人",
+      label: "负责人",
       labelRender: () => {
-        return <span style="color:green;">盘点负责人</span>
+        return <span style="color:green;">负责人</span>
       },
       fieldName: "planStocktakeUserName",
       value: ""
     },
     {
-      label: "计划盘点日期",
+      label: "日期",
       labelRender: () => {
-        return <span style="color:orange;">计划盘点日期</span>
+        return <span style="color:orange;">日期</span>
       },
       fieldName: "planStocktakeDate",
       value: ""
