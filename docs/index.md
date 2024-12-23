@@ -22,11 +22,6 @@ features:
     link: /components/
     linkText: 常用组件
   - icon: 🍉
-    title: 复杂组件
-    details: 一些复杂的组件
-    link: /组件/tableForm/
-    linkText: 复杂组件
-  - icon: 🍉
     title: tableForm
     details: 快速生成tableb表格、form表单
     link: /components/tableForm/

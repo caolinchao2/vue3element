@@ -27,16 +27,17 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '五、图标选择组件', link: '/components/图标选择组件/index' },
         { text: '六、下拉选择表格', link: '/components/CselectTable/index' },
         { text: '七、虚拟列表下拉选择表格', link: '/components/虚拟列表下拉选择表格/index' },
-        { text: '八、表单组件', link: '/components/Cform/index' },
+        { text: '八、表单组件', link: '/components/tableForm/form' },
+        { text: '九、表格组件', link: '/components/tableForm/table' },
       ],
     },
-    {
-      text: 'tableForm',
-      collapsed: false,
-      items: [
-        { text: '一、form', link: '/components/tableForm/form' },
-        { text: '二、table', link: '/components/tableForm/table' },
-      ],
-    },
+    // {
+    //   text: 'tableForm',
+    //   collapsed: false,
+    //   items: [
+    //     { text: '一、form', link: '/components/tableForm/form' },
+    //     { text: '二、table', link: '/components/tableForm/table' },
+    //   ],
+    // },
   ],
 }
