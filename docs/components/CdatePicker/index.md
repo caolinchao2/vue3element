@@ -6,7 +6,7 @@
 <template>
   <c-layout-page class="single_Date">
     <c-layout-page-item>
-      <el-radio-group v-model="size" aria-label="size control" size="small">
+      <el-radio-group v-model="size" aria-label="sizecontrol" size="small">
         <el-radio-button value="large">large</el-radio-button>
         <el-radio-button value="default">default</el-radio-button>
         <el-radio-button value="small">small</el-radio-button>
@@ -75,8 +75,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
-const size = ref("default")
+import { ref } from 'vue'
+const size = ref('default')
 const date = ref()
 const date1 = ref()
 const date2 = ref()
@@ -86,14 +86,14 @@ const date5 = ref()
 const date6 = ref()
 
 const typeTxt = {
-  date: "日期",
-  week: "周",
-  month: "月",
-  year: "年",
-  daterange: "日期范围",
-  monthrange: "月份范围",
-  datetime: "日期&时间",
-  datetimerange: "日期和时间点范围"
+  date: '日期',
+  week: '周',
+  month: '月',
+  year: '年',
+  daterange: '日期范围',
+  monthrange: '月份范围',
+  datetime: '日期&时间',
+  datetimerange: '日期和时间点范围',
 }
 
 const change = (event, type, value) => {
@@ -109,7 +109,7 @@ const change = (event, type, value) => {
     .box_content {
       display: flex;
       padding: 10px;
-     
+
       margin-top: 10px;
       flex-wrap: wrap;
     }
@@ -121,7 +121,6 @@ const change = (event, type, value) => {
   }
 }
 </style>
-
 ```
 
 ### 日期范围选择
@@ -163,20 +162,20 @@ const change = (event, type, value) => {
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
+import { ref } from 'vue'
 const date = ref()
 const date1 = ref()
 const date2 = ref()
 
 const typeTxt = {
-  date: "日期",
-  week: "周",
-  month: "月",
-  year: "年",
-  daterange: "日期范围",
-  monthrange: "月份范围",
-  datetime: "日期&时间",
-  datetimerange: "日期和时间点范围"
+  date: '日期',
+  week: '周',
+  month: '月',
+  year: '年',
+  daterange: '日期范围',
+  monthrange: '月份范围',
+  datetime: '日期&时间',
+  datetimerange: '日期和时间点范围',
 }
 
 const change = (event, type, value) => {
@@ -190,7 +189,7 @@ const change = (event, type, value) => {
     .box_content {
       display: flex;
       padding: 10px;
-     
+
       margin-top: 10px;
       flex-wrap: wrap;
     }
@@ -202,8 +201,6 @@ const change = (event, type, value) => {
   }
 }
 </style>
-
-
 ```
 
 ### 月份范围选择
@@ -236,19 +233,19 @@ const change = (event, type, value) => {
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
+import { ref } from 'vue'
 const date = ref()
 const date1 = ref()
 
 const typeTxt = {
-  date: "日期",
-  week: "周",
-  month: "月",
-  year: "年",
-  daterange: "日期范围",
-  monthrange: "月份范围",
-  datetime: "日期&时间",
-  datetimerange: "日期和时间点范围"
+  date: '日期',
+  week: '周',
+  month: '月',
+  year: '年',
+  daterange: '日期范围',
+  monthrange: '月份范围',
+  datetime: '日期&时间',
+  datetimerange: '日期和时间点范围',
 }
 
 const change = (event, type, value) => {
@@ -262,7 +259,7 @@ const change = (event, type, value) => {
     .box_content {
       display: flex;
       padding: 10px;
-     
+
       margin-top: 10px;
       flex-wrap: wrap;
     }
@@ -274,8 +271,6 @@ const change = (event, type, value) => {
   }
 }
 </style>
-
-
 ```
 
 ### 日期&时间范围选择
@@ -318,20 +313,20 @@ const change = (event, type, value) => {
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
+import { ref } from 'vue'
 const date = ref()
 const date1 = ref()
 const date2 = ref()
 
 const typeTxt = {
-  date: "日期",
-  week: "周",
-  month: "月",
-  year: "年",
-  daterange: "日期范围",
-  monthrange: "月份范围",
-  datetime: "日期&时间",
-  datetimerange: "日期和时间点范围"
+  date: '日期',
+  week: '周',
+  month: '月',
+  year: '年',
+  daterange: '日期范围',
+  monthrange: '月份范围',
+  datetime: '日期&时间',
+  datetimerange: '日期和时间点范围',
 }
 
 const change = (event, type, value) => {
@@ -345,7 +340,7 @@ const change = (event, type, value) => {
     .box_content {
       display: flex;
       padding: 10px;
-     
+
       margin-top: 10px;
       flex-wrap: wrap;
     }
@@ -357,7 +352,6 @@ const change = (event, type, value) => {
   }
 }
 </style>
-
 ```
 
 ### 插槽使用及自定义日期面板
@@ -371,7 +365,7 @@ const change = (event, type, value) => {
           <div>插槽使用及自定义日期面板</div>
           <c-date-picker v-model="date" @change="change">
             <template #default="cell">
-              <div class="cell_slot" :class="{ current: cell.isCurrent }">
+              <div class="cell_slot" :class="{ current: cell.isCurrent?cell.isCurrent:"" }">
                 <span class="customize_text">{{ cell.text }}</span>
                 <span v-if="isHoliday(cell)" class="slot_holiday" />
               </div>
@@ -415,7 +409,7 @@ const change = event => {
     .box_content {
       display: flex;
       padding: 10px;
-     
+
       margin-top: 10px;
       flex-wrap: wrap;
     }
